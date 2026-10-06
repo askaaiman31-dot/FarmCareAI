@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FarmCare AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="logo">
+            🌱 FarmCare AI
+        </div>
+
+        <button class="language-button" id="languageButton">
+            🌐 EN
+        </button>
+
+    </header>
+
+
+    <main>
+
+        <section class="welcome">
+
+            <p class="small-title">
+                SMART FARMING ASSISTANT
+            </p>
+
+            <h1>
+                Better Farming<br>
+                With AI
+            </h1>
+
+            <p class="welcome-text">
+                Detect crop diseases, check soil health,
+                and understand market prices.
+            </p>
+
+        </section>
+
+
+        <section class="feature-card disease-card">
+
+            <div class="feature-icon">
+                📷
+            </div>
+
+            <div class="feature-content">
+
+                <h2>
+                    Crop Disease Detection
+                </h2>
+
+                <p>
+                    Upload a photo of your crop leaf
+                    to check for possible diseases.
+                </p>
+
+                <button
+                    class="primary-button"
+                    id="diseaseButton">
+                    Upload Leaf Photo
+                </button>
+
+                <input
+                    type="file"
+                    id="leafImageInput"
+                    accept="image/*"
+                    hidden
+                >
+
+                <img
+                    id="leafPreview"
+                    src=""
+                    alt="Selected crop leaf"
+                    style="
+                        display: none;
+                        width: 100%;
+                        max-width: 250px;
+                        margin-top: 15px;
+                        border-radius: 12px;
+                    "
+                >
+
+                <p
+                    id="diseaseResult"
+                    style="
+                        display: none;
+                        margin-top: 15px;
+                        padding: 12px;
+                        background: #e8f5e9;
+                        border-radius: 10px;
+                        color: #2e7d32;
+                    "
+                ></p>
+
+            </div>
+
+        </section>
+
+
+        <section class="feature-card">
+
+            <div class="feature-icon">
+                🧪
+            </div>
+
+            <div class="feature-content">
+
+                <h2>
+                    Soil Health Analyzer
+                </h2>
+
+                <p>
+                    Enter your soil test results
+                    and get fertilizer guidance.
+                </p>
+
+                <button
+                    class="secondary-button"
+                    id="soilButton">
+                    Check Soil Health
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <section class="feature-card">
+
+            <div class="feature-icon">
+                💰
+            </div>
+
+            <div class="feature-content">
+
+                <h2>
+                    Market Price Advisor
+                </h2>
+
+                <p>
+                    View market trends and find
+                    a suitable time to sell your crop.
+                </p>
+
+                <button
+                    class="secondary-button"
+                    id="marketButton">
+                    Check Market Prices
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <section class="voice-card">
+
+            <div>
+
+                <h2>
+                    🎤 Voice Assistant
+                </h2>
+
+                <p>
+                    Get farming information using
+                    voice support.
+                </p>
+
+            </div>
+
+            <button
+                class="voice-button"
+                id="voiceButton">
+                🎤
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            FarmCare AI © 2026
+        </p>
+
+        <p>
+            Smart technology for better farming
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
