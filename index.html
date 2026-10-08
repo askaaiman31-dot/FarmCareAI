@@ -46,64 +46,35 @@
         </section>
 
 
-        <section class="feature-card disease-card">
+              <section class="feature-card disease-card">
+    <div class="feature-icon">📷</div>
 
-            <div class="feature-icon">
-                📷
-            </div>
+    <div class="feature-content">
+        <h2>Crop Disease Detection</h2>
 
-            <div class="feature-content">
+        <p>Upload a photo of your crop leaf to check for possible diseases.</p>
 
-                <h2>
-                    Crop Disease Detection
-                </h2>
+        <input
+            type="file"
+            id="leafImageInput"
+            accept="image/*"
+            capture="environment"
+            style="display: block; width: 100%; margin: 12px 0;"
+        >
 
-                <p>
-                    Upload a photo of your crop leaf
-                    to check for possible diseases.
-                </p>
+        <img
+            id="leafPreview"
+            alt="Selected crop leaf"
+            style="display: none; width: 100%; max-width: 250px; margin-top: 15px; border-radius: 12px;"
+        >
 
-                <button
-                    class="primary-button"
-                    id="diseaseButton">
-                    Upload Leaf Photo
-                </button>
+        <p id="diseaseResult" style="display: none;"></p>
 
-                <input
-                    type="file"
-                    id="leafImageInput"
-                    accept="image/*"
-                    style="display: block; width: 100%; margin: 12px 0;"
-                >
-
-                <img
-                    id="leafPreview"
-                    src=""
-                    alt="Selected crop leaf"
-                    style="
-                        display: none;
-                        width: 100%;
-                        max-width: 250px;
-                        margin-top: 15px;
-                        border-radius: 12px;
-                    "
-                >
-
-                <p
-                    id="diseaseResult"
-                    style="
-                        display: none;
-                        margin-top: 15px;
-                        padding: 12px;
-                        background: #e8f5e9;
-                        border-radius: 10px;
-                        color: #2e7d32;
-                    "
-                ></p>
-
-            </div>
-
-        </section>
+        <button type="button" class="primary-button" id="diseaseButton">
+            Analyze Leaf
+        </button>
+    </div>
+              </section>
 
 
         <section class="feature-card">
