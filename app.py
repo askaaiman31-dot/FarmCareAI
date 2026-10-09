@@ -12,7 +12,7 @@ st.title("🌱 FarmCare AI")
 st.write("Upload a plant leaf image to check for a possible disease.")
 
 MODEL_PATH = "farmcare_cnn.keras"
-CLASS_PATH = "class_names (1).json"
+CLASS_PATH = "class_names.json"
 FILE_ID = "1VuSv_krLMZsecUh89TiXwsCYdDcetJ2N"
 
 @st.cache_resource
