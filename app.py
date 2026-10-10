@@ -34,10 +34,13 @@ except Exception as e:
     st.error(f"Unable to load model or class names: {e}")
     st.stop()
 
+   
 uploaded_file = st.file_uploader(
     "Choose a leaf image",
-    type=["jpg", "jpeg", "png"]
+    type=["jpg", "jpeg", "png"],
+    key="leaf_upload"
 )
+
 
 if uploaded_file:
     image = Image.open(uploaded_file).convert("RGB")
