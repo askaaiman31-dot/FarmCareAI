@@ -45,7 +45,7 @@ if uploaded_file:
 
     if st.button("Analyze leaf"):
         image = image.resize((128, 128))
-        image_array = np.array(image, dtype=np.float32) / 255.0
+        image_array = np.array(image, dtype=np.float32)
         image_array = np.expand_dims(image_array, axis=0)
 
         with st.spinner("Analyzing leaf..."):
